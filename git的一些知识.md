@@ -34,6 +34,8 @@ git status查看当前仓库状态
 
 git add 加入暂存区
 
+git add .：将所有待加入暂存区的文件加入暂存区
+
 6.
 
 git commit -m "给自己看的备注信息"：**将暂存区的内容提交到当前分支**
@@ -42,7 +44,52 @@ git commit -m "给自己看的备注信息"：**将暂存区的内容提交到�
 
 
 
+**git restore --stage readme.txt**
 
+**将暂存区的文件撤出，但是不会修改文件**
+
+
+
+git diff readme.txt
+
+比较的是文件与暂存区的文件的区别
+
+
+
+git rm --cached XX  将文件从仓库索引目录中删掉
+
+
+
+git log  日志
+
+显示在一行 git log --pretty=oneline
+
+
+
+代码回滚 git reset --hard HEAD^^
+
+^:回滚一个版本
+
+^^:回滚2个版本
+
+
+
+git reset --hard HEAD^ 或 git reset --hard HEAD~：将代码库回滚到上一个版本
+git reset --hard HEAD^^：往上回滚两次，以此类推
+git reset --hard HEAD~100：往上回滚100个版本
+git reset --hard 版本号：回滚到某一特定版本
+
+
+
+git log 打印出来的是初始到回滚的地方的结点（从下往上读）
+
+
+
+git reflog 代码回滚的整个路径
+
+
+
+tmux的复制黏贴是啥？
 
 
 
