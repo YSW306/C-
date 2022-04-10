@@ -50,6 +50,26 @@ git commit -m "给自己看的备注信息"：**将暂存区的内容提交到�
 
 
 
+**暂存区不仅可以存放增加的文件与修改的文件**
+
+**还可以存放删除过的文件**
+
+
+
+**当删除未存在暂存区时，就可以回滚。**git restore a.txt
+
+
+
+**git restore readme.txt**
+
+**相当于是把工作区（文件夹）中新修改/新删除的回滚到暂存区git add.。**
+
+将XX文件尚未加入暂存区的修改**全部撤销**
+
+
+
+
+
 git diff readme.txt
 
 比较的是文件与暂存区的文件的区别
@@ -89,7 +109,23 @@ git reflog 代码回滚的整个路径
 
 
 
-tmux的复制黏贴是啥？
+tmux的复制黏贴是啥  ctrl +a +左括号  黏贴是加右括号
+
+
+
+git reset --hard 黏贴前面的数字就可以回到之前的版本了
+
+
+
+**git restore readme.txt**
+
+**相当于是把工作区（文件夹）中新修改/新删除的回滚到暂存区git add.。**
+
+
+
+git checkout — XX或git restore XX：将XX文件尚未加入暂存区的修改全部撤销
+
+
 
 
 
